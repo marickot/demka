@@ -1,0 +1,228 @@
+.unbounded-400 {
+    font-family: "Unbounded", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+  }
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Unbounded';
+    color: #1e1e1e;
+}
+
+header{
+    background-color: #ffffff;
+    font-size: 22px;
+    padding: 1vw 10vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+}
+header p{
+    font-size: 32px;
+}
+header div{
+    display: flex;
+    flex-direction: row;
+    gap: 15px; 
+}
+header a {
+    font-size: 22px;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    border-radius: 10px;
+    padding: 10px 15px;
+    border: 1px solid black;
+}
+header button{
+    font-size: 22px;
+    text-decoration: none;
+    border: none;
+    background-color: unset;
+}
+.content{
+    padding: 1vw 10vw;
+}
+.register{
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    padding: 25px;
+    border-radius: 15px;
+    border: 1px solid #1e1e1e;
+    font-size: 18px;
+    margin: auto;
+}
+.register input, .register select{
+    padding: 8px 6px;
+    margin-bottom: 5px;
+}
+.register label{
+    margin-bottom: 5px;
+}
+
+.register button{
+    color: #fff;
+    background-color: #2e2e2e;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 15px 6px;
+    margin-top: 5px;
+}
+
+.name_form{
+    font-size: 28px;
+    text-align: center;
+    margin: 5px 0 15px 0 ;
+}
+
+table {
+	width: 100%;
+	margin: 20px auto;
+	border: 1px solid #dddddd;
+	border-collapse: collapse; 
+}
+table th {
+    font-weight: bold;
+    padding: 5px;
+    background: #efefef;
+    font-size: 22px;
+    border: 1px solid #dddddd;
+    margin: 10px auto;
+}
+table td {
+	border: 1px solid #dddddd;
+	padding: 5px;
+}
+.cont{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.cont a{
+    border: 1px solid #2e2e2e;
+    text-decoration: none;
+    color: #1e1e1e;
+    border-radius: 15px;
+    padding: 10px;
+    font-size: 18px;
+}
+.checked .toggle {
+    display:none;
+}
+
+.toggle input{
+    padding: 10px;
+    min-width: 300px;
+    font-size: 18px;
+}
+fieldset{
+    font-size: 18px;
+    margin: 10px 0;
+}
+.chs{
+    color: #fff;
+    font-size: 18px;
+    background-color: #1e1e1e;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+}
+.checked input[type=radio]:checked ~ .toggle,
+.checked input[type=checkbox]:checked ~ .toggle
+{
+    display:block;
+}
+.overflow{
+    overflow-x: auto;
+}
+@media screen and (max-width: 400px){
+    header{
+        padding: 5vw 10vw;
+        flex-direction: column;
+    }
+    header p{
+        font-size: 28px;
+    }
+    header div{
+        display: flex;
+        flex-direction: column;
+    }
+    header a {
+        justify-content: center;
+    }
+    .register {
+        width: 325px;
+        padding: 25px;
+    }
+
+    .name_form{
+        margin: 25px 0 15px 0 ;
+    }
+    
+    table {
+        width: 100%;
+        margin: 20px auto;
+        border: 1px solid #dddddd;
+        border-collapse: collapse; 
+    }
+    table th {
+        font-weight: bold;
+        padding: 5px;
+        background: #efefef;
+        font-size: 16px;
+        border: 1px solid #dddddd;
+        margin: 10px auto;
+    }
+    table td {
+        font-size: 14px;
+    }
+    .cont{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 10px;
+    }
+    .cont a{
+        border: 1px solid #2e2e2e;
+        text-decoration: none;
+        color: #1e1e1e;
+        border-radius: 15px;
+        padding: 10px;
+        font-size: 18px;
+    }
+    .checked .toggle {
+        display:none;
+    }
+    
+    .toggle input{
+        padding: 10px;
+        min-width: 300px;
+        font-size: 18px;
+    }
+    fieldset{
+        font-size: 18px;
+        margin: 10px 0;
+    }
+    .chs{
+        color: #fff;
+        font-size: 18px;
+        background-color: #1e1e1e;
+        border: none;
+        border-radius: 5px;
+        padding: 10px;
+    }
+
+}
