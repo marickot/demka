@@ -66,12 +66,12 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
 @extends('layouts.app')
 
-@section('content')
-<div class="container">
+    @section('content')
+    <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-<h1>Зарегистрироваться</h1>
+    <h1>Зарегистрироваться</h1>
                     <form class='form' method="POST" action="{{ route('register') }}">
                         @csrf
 
@@ -125,5 +125,5 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
                                     {{ __('Зарегистрироваться') }}
                                 </button>
                     </form>
-@endsection
+    @endsection
 
